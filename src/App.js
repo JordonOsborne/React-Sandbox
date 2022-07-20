@@ -1,7 +1,12 @@
+import UseRef from "./Components/UseRef"
 import "./App.css"
 
 function App() {
-  return <h1>Good Morning</h1>
+  return (
+    <div className='container mt-5'>
+      <UseRef />
+    </div>
+  )
 }
 
 export default App
