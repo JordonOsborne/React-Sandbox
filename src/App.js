@@ -1,11 +1,24 @@
-import UseRef from "./Components/UseRef"
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
+import Header from "./Components/Header"
+import Home from "./Pages/Home"
+import UseRef from "./Pages/UseRef"
+import NotFound from "./Pages/NotFound"
 import "./App.css"
 
 function App() {
   return (
-    <div className='container mt-5'>
-      <UseRef />
-    </div>
+    <>
+      <Router>
+        <Header />
+        <main className='container mt-5'>
+          <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='/useRef' element={<UseRef />} />
+            <Route path='/*' element={<NotFound />} />
+          </Routes>
+        </main>
+      </Router>
+    </>
   )
 }
 
