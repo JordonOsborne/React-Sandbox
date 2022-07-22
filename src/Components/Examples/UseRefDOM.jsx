@@ -39,7 +39,7 @@ function useRefDOM() {
   return (
     <div className='mb-4'>
       <h1 className='text-center'>Create DOM Reference</h1>
-      <p className='text-lg text-center'>
+      <p className='lead text-center'>
         This hook can be used for referencing DOM element data without the use
         of 'State'. An example is shown below where the numberInput is validated
         when the submit button is clicked.
