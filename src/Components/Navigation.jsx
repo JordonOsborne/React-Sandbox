@@ -24,6 +24,16 @@ function Navigation() {
           useRef
         </Link>
       </li>
+      <li>
+        <Link
+          to='/UseMemo'
+          className={`nav-link px-2 text-${
+            path === "/UseMemo" ? "secondary" : "white"
+          }`}
+        >
+          useMemo
+        </Link>
+      </li>
     </ul>
   )
 }
