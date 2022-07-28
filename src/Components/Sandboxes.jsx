@@ -41,6 +41,20 @@ function Sandboxes() {
             </div>
           </Link>
         </div>
+        <div className='col-4 g-3'>
+          <Link to='/UseCallback' className='text-reset text-decoration-none'>
+            <div className='col d-flex align-items-start'>
+              <div>
+                <h4 className='fw-bold mb-0'>useCallback Hook</h4>
+                <p>
+                  This hook will only recompute the memoized callback when one
+                  of the dependencies has changed. This optimization helps to
+                  avoid expensive calculations on every render.
+                </p>
+              </div>
+            </div>
+          </Link>
+        </div>
       </div>
     </div>
   )

@@ -34,6 +34,16 @@ function Navigation() {
           useMemo
         </Link>
       </li>
+      <li>
+        <Link
+          to='/UseCallback'
+          className={`nav-link px-2 text-${
+            path === "/UseCallback" ? "secondary" : "white"
+          }`}
+        >
+          useCallback
+        </Link>
+      </li>
     </ul>
   )
 }

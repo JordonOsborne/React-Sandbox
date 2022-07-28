@@ -3,6 +3,7 @@ import Header from "./Components/Header"
 import Home from "./Pages/Home"
 import UseRef from "./Pages/UseRef"
 import UseMemo from "./Pages/UseMemo"
+import UseCallback from "./Pages/UseCallback"
 import NotFound from "./Pages/NotFound"
 import "./App.css"
 
@@ -16,6 +17,7 @@ function App() {
             <Route path='/' element={<Home />} />
             <Route path='/useRef' element={<UseRef />} />
             <Route path='/useMemo' element={<UseMemo />} />
+            <Route path='/useCallback' element={<UseCallback />} />
             <Route path='/*' element={<NotFound />} />
           </Routes>
         </main>
