@@ -2,6 +2,7 @@ import { useState, useRef, useMemo, useEffect } from "react"
 
 function UseMemoExample() {
   const [number, setNumber] = useState(1)
+  // eslint-disable-next-line
   const [inc, setInc] = useState(0)
 
   const renders = useRef(1)
@@ -17,12 +18,15 @@ function UseMemoExample() {
     setNumber(e.target.value)
   }
 
+  // THIS FUNCTION IS ONLY USED TO CAUSE A RE-RENDER OF THE COMPONENT
   const Increment = (e) => {
     e.preventDefault()
     setInc((prevState) => {
       return prevState + 1
     })
   }
+
+  // THIS FUNCTION RESETS THE FORM
   const clearForm = (e) => {
     e.preventDefault()
     setNumber(1)
