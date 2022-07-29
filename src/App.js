@@ -5,6 +5,7 @@ import UseRef from "./Pages/UseRef"
 import UseMemo from "./Pages/UseMemo"
 import UseCallback from "./Pages/UseCallback"
 import UseFetch from "./Pages/UseFetch"
+import UseLocalStorage from "./Pages/UseLocalStorage"
 import NotFound from "./Pages/NotFound"
 import "./App.css"
 
@@ -20,6 +21,7 @@ function App() {
             <Route path='/useMemo' element={<UseMemo />} />
             <Route path='/useCallback' element={<UseCallback />} />
             <Route path='/useFetch' element={<UseFetch />} />
+            <Route path='/useLocalStorage' element={<UseLocalStorage />} />
             <Route path='/*' element={<NotFound />} />
           </Routes>
         </main>

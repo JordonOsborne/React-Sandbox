@@ -51,7 +51,7 @@ function Navigation() {
             path === "/UseFetch" ? "secondary" : "white"
           }`}
         >
-          useCallback
+          useFetch
         </Link>
       </li>
     </ul>
