@@ -54,6 +54,16 @@ function Navigation() {
           useFetch
         </Link>
       </li>
+      <li>
+        <Link
+          to='/UseLocalStorage'
+          className={`nav-link px-2 text-${
+            path === "/UseLocalStorage" ? "secondary" : "white"
+          }`}
+        >
+          useLocalStorage
+        </Link>
+      </li>
     </ul>
   )
 }
