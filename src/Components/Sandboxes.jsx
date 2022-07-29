@@ -55,6 +55,16 @@ function Sandboxes() {
             </div>
           </Link>
         </div>
+        <div className='col-4 g-3'>
+          <Link to='/UseFetch' className='text-reset text-decoration-none'>
+            <div className='col d-flex align-items-start'>
+              <div>
+                <h4 className='fw-bold mb-0'>useFetch Custom Hook</h4>
+                <p></p>
+              </div>
+            </div>
+          </Link>
+        </div>
       </div>
     </div>
   )

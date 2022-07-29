@@ -44,6 +44,16 @@ function Navigation() {
           useCallback
         </Link>
       </li>
+      <li>
+        <Link
+          to='/UseFetch'
+          className={`nav-link px-2 text-${
+            path === "/UseFetch" ? "secondary" : "white"
+          }`}
+        >
+          useCallback
+        </Link>
+      </li>
     </ul>
   )
 }
