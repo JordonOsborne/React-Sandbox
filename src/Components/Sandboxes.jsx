@@ -60,6 +60,27 @@ function Sandboxes() {
             <div className='col d-flex align-items-start'>
               <div>
                 <h4 className='fw-bold mb-0'>useFetch Custom Hook</h4>
+                <p>
+                  This custom hook replaces the Fetch method with an asyncronis
+                  fetch function that is more friendly with React applications.
+                </p>
+                <p></p>
+              </div>
+            </div>
+          </Link>
+        </div>
+        <div className='col-4 g-3'>
+          <Link
+            to='/UseLocalStorage'
+            className='text-reset text-decoration-none'
+          >
+            <div className='col d-flex align-items-start'>
+              <div>
+                <h4 className='fw-bold mb-0'>useLocalStorage Custom Hook</h4>
+                <p>
+                  This hook sets local storage in the browser whenever the input
+                  value changes.
+                </p>
                 <p></p>
               </div>
             </div>
